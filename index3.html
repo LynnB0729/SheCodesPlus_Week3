@@ -27,6 +27,50 @@
 
       weather[0]["windspeed"] = "35 mph";
       console.log(weather[0].windspeed);
+
+      console.log(weather[0]);
+
+      let forecast = [];
+      
+      forecast = [
+        {
+         Day: "Monday",
+         Temp: 68 
+        },
+
+        {
+         Day: "Tuesday",
+         Temp: 70
+        },
+
+        {
+         Day: "Wednesday",
+         Temp: 71
+        },
+
+        {
+         Day: "Thursday",
+         Temp: 74
+        },
+
+        {
+         Day: "Friday",
+         Temp: 74
+        },
+
+        {
+         Day: "Saturday", 
+         Temp: 72 
+        }, 
+
+        {
+         Day: "Sunday", 
+         Temp: 71
+        }
+      ];
+
+      console.log(forecast);
+      console.log(`Today is ${forecast[0].Day} and the temperature is ${forecast[0].Temp}.`);
     
     </script>
 </body>
