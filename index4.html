@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+</head>
+<body>
+    <p>JS Objects Practice</p>
+
+    <script>
+        
+        let paris = {
+            name: "Paris",
+            country: "France",
+            language: "French",
+            temperature: 18,
+            capitalCity: true
+        };
+
+        let sydney = {
+            name: "sydney",
+            country: "Australia",
+            language: "English",
+            temperature: 25,
+            capitalCity: true
+        };
+
+        console.log(paris.temperature);
+        console.log(sydney.temperature);
+
+        let australianCities = ["Sydney", "Brisbane", "Perth"];
+        console.log(australianCities);
+        
+        let places = [
+        {
+            name: "Sydney",
+            country: "Australia",
+            language: "English",
+            temperature: 27,
+            capitalCity: false
+        },
+
+        {
+            name: "Brisbane",
+            country: "Australia",
+            language: "English",
+            temperature: 29,
+            capitalCity: true
+        },
+
+        {
+            name: "Perth",
+            country: "Australia",
+            language: "English",
+            temperature: 29,
+            capitalCity: false
+        }];
+
+        console.log((places[0].temperature));
+        console.log((places[1].temperature));
+        console.log((places[2].temperature));
+    
+       
+        places.forEach(function(places) {
+            console.log(places.temperature)
+        });
+
+    </script>
+    
+</body>
+</html>
