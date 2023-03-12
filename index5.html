@@ -71,16 +71,19 @@
 
         let userInput = prompt("What City?").toLowerCase().trim();
 
+        let foundMatch = false;
 
         for (let i = 0; i < cities.length; i++) {
             // check if the current object's name property matches the user input
             if (userInput === cities[i].name) {
-                console.log(`The temperature in ${cities[i].name.toLocaleUpperCase()} is ${Math.round(cities[i].temp)} \u00B0C and the humidity is ${cities[i].humidity}//%.`);
+                console.log(`The temperature in ${cities[i].name.toLocaleUpperCase()} is ${Math.round(cities[i].temp)} \u00B0C and the humidity is ${cities[i].humidity}%.`);
+                foundMatch = true;
                 break; // stop looping once a match is found
-            } else {
-                alert("Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+sydney");
-                break;
             }
+        }
+
+        if (!foundMatch) {
+            console.log(`Sorry, no match found for '${userInput}'`);
         }
 
 
